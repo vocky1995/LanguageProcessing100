@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 def ngram(input,n=2):
     L = []
     end = len(input)-n+1
