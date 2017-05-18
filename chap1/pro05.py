@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def ngram(string,n=2):
+def ngram(input,n=2):
     L = []
-    end = len(string)-n+1
+    end = len(input)-n+1
     for i in range(end):
-        L.append(string[i:i+n])
+        L.append(input[i:i+n])
     return L
 
-string = "I am an NLPer"
-print ngram(string,2)
+if __name__ == "__main__":
+    string = "I am an NLPer"
+    print ngram(string,2)
